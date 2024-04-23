@@ -18,7 +18,7 @@ const config: HardhatUserConfig = {
   },
   networks: {
     morphTestnet: {
-      url: process.env.MORPH_TESTNET_URL || "",
+      url: process.env.MORPH_TESTNET_URL || "https://rpc-testnet.morphl2.io",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
